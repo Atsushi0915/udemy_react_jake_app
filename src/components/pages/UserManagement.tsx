@@ -11,6 +11,7 @@ export const UserManagement: FC = memo(() => {
   const { isOpen, onOpen, onClose} = useDisclosure();
   const { getUsers, users, loading } = useAllUsers();
   const { onSelectUser, selectedUser } = useSelectUser(); 
+  
 
   useEffect(() => getUsers(), [])
 
